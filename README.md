@@ -1,2 +1,2 @@
 # postproduction
-scritp and automatisatons fro production house
+scritp and automatisations fro production house
