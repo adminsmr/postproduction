@@ -16,7 +16,7 @@ if [ "$CON1" == Off ]; then
 	sudo networksetup -setairportpower $SPN on
 	sudo networksetup -setnetworkserviceenabled "Wi-Fi" on
 	sudo networksetup -setdnsservers "Wi-Fi" 10.111.0.50
-	sudo networksetup -setsearchdomains "Wi-Fi" postpro
+	sudo networksetup -setsearchdomains "Wi-Fi" "<FQDN>"
 	#wait for 3 sec pause ot airpower on
 	read -rst 3
 	sudo networksetup -setairportnetwork $SPN "<NET_NAME>" "<PASS>"
