@@ -8,12 +8,12 @@ path="/mnt/storage/projects/"
 filename=log_delolder90day_$timestamp.txt
 log=$path/$filename
 
-#find /mnt/storage/projects -mtime +90 -type f -print -delete >> $log
+#find $path -mtime +90 -type f -print -delete >> $log
 
 echo "Delete:: Script Start -- $(date +%Y%m%d_%H%M)" >> $log
 START_TIME=$(date +%s)
 
-find /mnt/storage/projects -mtime +90 -type f -print -delete >> $log
+find $path -mtime +90 -type f -print -delete >> $log
 
 END_TIME=$(date +%s)
 ELAPSED_TIME=$(expr $END_TIME - $START_TIME)
