@@ -19,7 +19,7 @@ if [ "$CON1" == Off ]; then
 	sudo networksetup -setsearchdomains "Wi-Fi" postpro
 	#wait for 3 sec pause ot airpower on
 	read -rst 3
-	sudo networksetup -setairportnetwork $SPN "StarMediaNet" "StarMediaWiFi"
+	sudo networksetup -setairportnetwork $SPN "<NET_NAME>" "<PASS>"
 else
 	sudo networksetup -setsearchdomains "Wi-Fi" empty
 	sudo networksetup -setdnsservers "Wi-Fi" empty
